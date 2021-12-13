@@ -3,7 +3,7 @@
 # if using apt-get add "-o DPkg::Lock::Timeout=600"
 
 # Installing Python
-sudo apt-get -o DPkg::Lock::Timeout=600 install python 
+sudo apt-get -o DPkg::Lock::Timeout=600 -y install python 
 
 # Installing Oh My Zsh
 echo "Installing ohmyzhs"

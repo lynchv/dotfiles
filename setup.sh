@@ -7,7 +7,7 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 echo "Copying custom theme"
 cp ~/dotfiles/inspect.zsh-theme ~/.oh-my-zsh/themes
 echo "Adding plugins"
-sed -i '' 's/plugins=(git/plugins=(git git-prompt/g' ~/.zshrc
+sed -i 's/plugins=(git/plugins=(git git-prompt/g' ~/.zshrc
 echo "Initializing ohmyzhs"
 source ~/.zshrc
 

@@ -14,6 +14,6 @@ echo "Modifying .zshrc plugins"
 sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"inspect\"/g' ~/.zshrc
 sed -i 's/plugins=(git/plugins=(git git-prompt/g' ~/.zshrc
 echo "Initializing ohmyzhs"
-source ~/.zshrc
+# source ~/.zshrc
 
 

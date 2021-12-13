@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # jc --unit dotfiles.service -f
 # sc restart dotfiles.service
 # if using apt-get add "-o DPkg::Lock::Timeout=600"

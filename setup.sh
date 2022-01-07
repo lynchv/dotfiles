@@ -1,11 +1,12 @@
-# jc --unit dotfiles.service -f
-# sc restart dotfiles.service
+# journalctl --unit dotfiles.service -f
+# journalctl --unit dotfiles.service --lines 50
+# systemctl restart dotfiles.service
 # if using apt-get add "-o DPkg::Lock::Timeout=600"
 
-# Installing Python
+# Installing Python (oh-my-zsh plugin dependency)
 sudo apt-get -o DPkg::Lock::Timeout=600 -y install python 
 
-# Installing Oh My Zsh
+# Installing oh-my-zsh
 echo "Installing ohmyzhs"
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 echo "Copying custom theme"

@@ -3,7 +3,8 @@
 # systemctl restart dotfiles.service
 # if using apt-get add "-o DPkg::Lock::Timeout=600"
 
-# Installing Python (oh-my-zsh plugin dependency)
+# Installing Python
+sudo apt-get -o DPkg::Lock::Timeout=600 update 
 sudo apt-get -o DPkg::Lock::Timeout=600 -y install python 
 
 # Installing oh-my-zsh
